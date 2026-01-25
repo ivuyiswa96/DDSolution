@@ -2,10 +2,15 @@
   "name": "distinctdawn-website",
   "version": "1.0.0",
   "description": "Distinct Dawn Solutions Website",
+  "main": "index.html",
   "scripts": {
-    "start": "npx serve -s . -l $PORT"
+    "start": "serve -s . -l ${PORT:-3000}",
+    "build": "echo 'No build step needed'"
   },
   "dependencies": {
     "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
