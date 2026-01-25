@@ -1,0 +1,11 @@
+{
+  "name": "distinctdawn-website",
+  "version": "1.0.0",
+  "description": "Distinct Dawn Solutions Website",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
