@@ -822,6 +822,7 @@ section h3 {
     border-radius: 10px;
     text-align: center;
     transition: box-shadow 0.3s;
+    background: var(--white);
 }
 
 .client-card:hover {
@@ -832,6 +833,20 @@ section h3 {
     font-size: 48px;
     margin-bottom: 15px;
     color: var(--gray-600);
+}
+
+.client-logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.client-logo img {
+    max-height: 70px;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 .client-card h4 {
@@ -943,15 +958,15 @@ section h3 {
 .footer {
     background: var(--black);
     color: var(--white);
-    padding: 80px 0 40px;
+    padding: 60px 0 30px;
     margin-top: 0;
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .footer-logo {
@@ -973,6 +988,21 @@ section h3 {
 
 .footer-logo .logo-text {
     color: var(--white);
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: var(--gray-600);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-yellow);
 }
 
 .footer-info p {
