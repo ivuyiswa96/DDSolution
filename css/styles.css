@@ -337,7 +337,7 @@ body {
 
 .btn-outline {
     background: transparent;
-    color: var(--white);
+    color: var(--gray-900);
     border: 1px solid rgba(253, 185, 19, 0.5);
     box-shadow: 0 0 15px rgba(253, 185, 19, 0.1);
 }
@@ -350,14 +350,14 @@ body {
 
 .btn-ghost {
     background: transparent;
-    color: var(--white);
+    color: var(--gray-900);
     padding: 14px 24px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--gray-300);
 }
 
 .btn-ghost:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--gray-100);
+    border-color: var(--gray-400);
 }
 
 .btn-large {
@@ -1857,7 +1857,14 @@ section h3 {
     max-width: 130px;
     object-fit: contain;
     border-radius: var(--radius-md);
-    filter: brightness(1.2);
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all var(--transition-base);
+}
+
+.client-card:hover .client-logo img {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .client-card h4 {
