@@ -241,18 +241,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const startY = Math.random() * 100;
             const duration = Math.random() * 15 + 10;
             const delay = Math.random() * 5;
-            const hue = Math.random() > 0.5 ? '180' : '45'; // Cyan or Gold
+            const hue = Math.random() > 0.5 ? '40' : '30'; // Gold tones
             
             particle.style.cssText = `
                 position: absolute;
                 width: ${size}px;
                 height: ${size}px;
-                background: hsl(${hue}, 100%, 60%);
+                background: hsl(${hue}, 90%, 55%);
                 border-radius: 50%;
                 left: ${startX}%;
                 top: ${startY}%;
-                opacity: ${Math.random() * 0.5 + 0.2};
-                box-shadow: 0 0 ${size * 3}px hsl(${hue}, 100%, 60%);
+                opacity: ${Math.random() * 0.3 + 0.1};
+                box-shadow: 0 0 ${size * 2}px hsl(${hue}, 90%, 55%);
                 animation: particle-float ${duration}s ease-in-out infinite ${delay}s;
                 pointer-events: none;
             `;
