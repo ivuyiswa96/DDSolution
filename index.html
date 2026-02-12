@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distinct Dawn Solutions - Company Profile</title>
+    <title>Distinct Dawn Solutions - Next-Gen IT Managed Services</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -29,47 +32,109 @@
         </div>
     </nav>
 
-    <!-- Triangle Background -->
-    <div class="triangle-bg">
-        <div class="triangle triangle-1"></div>
-        <div class="triangle triangle-2"></div>
-        <div class="triangle triangle-3"></div>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="grid-overlay"></div>
+        <div id="particles-container"></div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content-centered">
-                <div class="hero-badge">Next-Gen Managed Services Provider</div>
-                <h1 class="hero-title">
-                    We Don't Just Keep<br>
-                    The Lights On.<br>
-                    <span class="gradient-text">We Illuminate The Path.</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Intelligent automation. Expert oversight. Business outcomes that matter.
-                </p>
-                <div class="hero-cta">
-                    <a href="/services.html" class="btn btn-primary">Explore Our Services</a>
-                    <a href="/contact.html" class="btn btn-outline">Partner With Us</a>
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Next-Gen Managed Services Provider
+                    </div>
+                    <h1 class="hero-title">
+                        We Don't Just Keep<br>
+                        The Lights On.<br>
+                        <span class="gradient-text">We Illuminate The Path.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Intelligent automation. Expert oversight. Business outcomes that matter.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="/services.html" class="btn btn-primary">
+                            <span>Explore Our Services</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="/contact.html" class="btn btn-outline">Partner With Us</a>
+                    </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">99.9%</span>
-                        <span class="stat-label">Uptime SLA</span>
+                
+                <div class="hero-visual">
+                    <!-- System Status Card -->
+                    <div class="status-card glass animate-float">
+                        <div class="status-header">
+                            <div class="status-icon pulse-green">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <span>System Status</span>
+                        </div>
+                        <div class="status-title">All Systems Operational</div>
+                        <div class="status-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Uptime SLA</span>
+                                <span class="metric-value">99.9%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Cost Reduction</span>
+                                <span class="metric-value grade">30%</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">30%</span>
-                        <span class="stat-label">Cost Reduction</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Expert Support</span>
+                    
+                    <!-- Support Card -->
+                    <div class="support-card glass animate-float-delayed">
+                        <div class="support-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="support-content">
+                            <span class="support-label">Expert Support</span>
+                            <span class="support-title">24/7 Available</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="hero-glow"></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime SLA</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">30%</span>
+                    <span class="stat-label">Cost Reduction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Expert Support</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">ISO</span>
+                    <span class="stat-label">Certified</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Features Section -->
@@ -82,45 +147,135 @@
             </div>
             <div class="features-grid">
                 <div class="feature-card glass">
-                    <div class="feature-icon">🚀</div>
+                    <div class="feature-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
                     <h3>Predictive Operations</h3>
                     <p>AI-driven monitoring that anticipates issues before they impact your business.</p>
+                    <a href="/services.html" class="feature-link">Learn more →</a>
                 </div>
                 <div class="feature-card glass">
-                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
                     <h3>Security-First</h3>
                     <p>Embedded DevSecOps with continuous vulnerability scanning and compliance.</p>
+                    <a href="/services.html" class="feature-link">Learn more →</a>
                 </div>
                 <div class="feature-card glass">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
                     <h3>Self-Healing Systems</h3>
                     <p>Automated remediation scripts that resolve common issues instantly.</p>
+                    <a href="/services.html" class="feature-link">Learn more →</a>
                 </div>
                 <div class="feature-card glass">
-                    <div class="feature-icon">📊</div>
+                    <div class="feature-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
                     <h3>Business Outcomes</h3>
                     <p>Every service aligned to measurable KPIs that matter to your bottom line.</p>
+                    <a href="/services.html" class="feature-link">Learn more →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients Marquee -->
+    <!-- Services Preview Section -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Capabilities</span>
+                <h2>Services Built For <span class="gradient-text">Tomorrow</span></h2>
+                <p>End-to-end IT services tailored for your success.</p>
+            </div>
+            <div class="services-showcase">
+                <div class="service-showcase-card">
+                    <div class="service-showcase-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                        </svg>
+                    </div>
+                    <h4>Managed IT & Cloud</h4>
+                    <p>AWS, Azure, GCP & On-Premise</p>
+                </div>
+                <div class="service-showcase-card">
+                    <div class="service-showcase-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h4>DevSecOps</h4>
+                    <p>Security baked into every workflow</p>
+                </div>
+                <div class="service-showcase-card">
+                    <div class="service-showcase-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h4>Software Development</h4>
+                    <p>Full SDLC & change management</p>
+                </div>
+                <div class="service-showcase-card">
+                    <div class="service-showcase-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+                        </svg>
+                    </div>
+                    <h4>AI-Driven Efficiency</h4>
+                    <p>Predictive analytics & automation</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="/services.html" class="btn btn-primary btn-large">
+                    View All Services
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
     <section class="clients-section">
         <div class="container">
             <p class="clients-label">Trusted by leading organisations across Africa</p>
-            <div class="clients-marquee">
-                <div class="marquee-track">
-                    <span class="client-name">ABSA</span>
-                    <span class="client-name">MEDIPARK</span>
-                    <span class="client-name">CSIR</span>
-                    <span class="client-name">City of Ekurhuleni</span>
-                    <span class="client-name">Gauteng Province</span>
-                    <span class="client-name">SAYM</span>
-                    <span class="client-name">ABSA</span>
-                    <span class="client-name">MEDIPARK</span>
-                    <span class="client-name">CSIR</span>
-                    <span class="client-name">City of Ekurhuleni</span>
+            <div class="clients-logo-grid">
+                <div class="client-logo-item">
+                    <img src="/images/clients/absa.png" alt="ABSA" loading="lazy">
+                </div>
+                <div class="client-logo-item">
+                    <img src="/images/clients/medipark.png" alt="Medipark" loading="lazy">
+                </div>
+                <div class="client-logo-item">
+                    <img src="/images/clients/csir.jpg" alt="CSIR" loading="lazy">
+                </div>
+                <div class="client-logo-item">
+                    <img src="/images/clients/ekurhuleni.png" alt="City of Ekurhuleni" loading="lazy">
+                </div>
+                <div class="client-logo-item">
+                    <img src="/images/clients/gauteng.jpg" alt="Gauteng Province" loading="lazy">
+                </div>
+                <div class="client-logo-item">
+                    <img src="/images/clients/saym.jpg" alt="SAYM" loading="lazy">
                 </div>
             </div>
         </div>
@@ -129,10 +284,26 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="cta-card glass-dark">
-                <h2>Ready to Transform Your IT Operations?</h2>
-                <p>Let's discuss how DDS can drive your next stage of growth.</p>
-                <a href="/contact.html" class="btn btn-primary btn-large">Get Started Today →</a>
+            <div class="cta-card">
+                <div class="cta-content">
+                    <span class="cta-badge">Let's Talk</span>
+                    <h2>Ready to Transform Your IT Operations?</h2>
+                    <p>Let's discuss how DDS can drive your next stage of growth.</p>
+                    <div class="cta-buttons">
+                        <a href="/contact.html" class="btn btn-primary btn-large">
+                            Get Started Today
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="/about.html" class="btn btn-ghost">Learn About Us</a>
+                    </div>
+                </div>
+                <div class="cta-decoration">
+                    <div class="decoration-ring ring-1"></div>
+                    <div class="decoration-ring ring-2"></div>
+                    <div class="decoration-ring ring-3"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -140,17 +311,37 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                    <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
+                        <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                    </div>
+                    <p class="footer-tagline">Your trusted partner for comprehensive managed IT services and digital transformation.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/about.html">About</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/why-us.html">Why Us</a>
-                    <a href="/contact.html">Contact</a>
+                <div class="footer-nav">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/services.html">Managed IT</a></li>
+                        <li><a href="/services.html">Cybersecurity</a></li>
+                        <li><a href="/services.html">Cloud Services</a></li>
+                        <li><a href="/services.html">Network Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/why-us.html">Why Choose Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@distinctdawn.co.za">info@distinctdawn.co.za</a></li>
+                        <li><a href="/contact.html">Fourways, Johannesburg</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
