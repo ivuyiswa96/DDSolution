@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Distinct Dawn Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
+                <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html" class="active">Services</a></li>
+                <li><a href="/why-us.html">Why Us</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="grid-overlay"></div>
+        <div id="particles-container"></div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                <span class="section-tag">Our Capabilities</span>
+                <h2 style="font-size: 3rem;">Services Built For <span class="gradient-text">Tomorrow</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <div class="container">
+            <div class="services-modern-grid">
+                <!-- Service 1 -->
+                <div class="service-card-modern glass">
+                    <div class="service-number">01</div>
+                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                        </svg>
+                    </div>
+                    <h4>Managed IT & Cloud Operations</h4>
+                    <p>Comprehensive management of Cloud (AWS, Azure, GCP) and On-Premise environments.</p>
+                    <ul class="service-features">
+                        <li>High-availability monitoring</li>
+                        <li>Hybrid cloud solutions</li>
+                        <li>24/7 infrastructure support</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card-modern glass">
+                    <div class="service-number">02</div>
+                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h4>Software Development & Change Management</h4>
+                    <p>From ideation to deployment with stability and speed.</p>
+                    <ul class="service-features">
+                        <li>Full SDLC handling</li>
+                        <li>Strategic change management</li>
+                        <li>Minimal downtime transitions</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card-modern glass">
+                    <div class="service-number">03</div>
+                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h4>DevSecOps & Automation</h4>
+                    <p>Security baked into every workflow.</p>
+                    <ul class="service-features">
+                        <li>CI/CD pipelines</li>
+                        <li>Real-time vulnerability scanning</li>
+                        <li>Automated compliance</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card-modern glass">
+                    <div class="service-number">04</div>
+                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/>
+                            <path d="M12 2v10l4 4"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h4>AI-Driven Efficiency</h4>
+                    <p>Leverage AI to eliminate manual bottlenecks.</p>
+                    <ul class="service-features">
+                        <li>Predictive analytics</li>
+                        <li>Self-healing systems</li>
+                        <li>Automated remediation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quote Box -->
+            <div class="quote-box glass-dark" style="margin-top: 60px;">
+                <p>
+                    "By integrating <strong>Artificial Intelligence</strong> into every layer of our 
+                    operations, we move beyond reactive support to <span class="gradient-text">predictive excellence</span>."
+                </p>
+                <p class="author">— Managing Director</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <span class="cta-badge">Ready to Start?</span>
+                    <h2>Let's Build Your Future-Ready Infrastructure</h2>
+                    <p>Partner with us to transform your IT operations with intelligent automation and expert oversight.</p>
+                    <div class="cta-buttons">
+                        <a href="/contact.html" class="btn btn-primary btn-large">
+                            Contact Us Today
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-decoration">
+                    <div class="decoration-ring ring-1"></div>
+                    <div class="decoration-ring ring-2"></div>
+                    <div class="decoration-ring ring-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
+                        <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                    </div>
+                    <p class="footer-tagline">Your trusted partner for comprehensive managed IT services and digital transformation.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/services.html">Managed IT</a></li>
+                        <li><a href="/services.html">Cybersecurity</a></li>
+                        <li><a href="/services.html">Cloud Services</a></li>
+                        <li><a href="/services.html">Network Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/why-us.html">Why Choose Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@distinctdawn.co.za">info@distinctdawn.co.za</a></li>
+                        <li><a href="/contact.html">Fourways, Johannesburg</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Distinct Dawn Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

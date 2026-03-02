@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Distinct Dawn Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="/" class="logo">
-                <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Distinct Dawn Solutions</span>
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
+            <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About</a></li>
+                <li><a href="/about.html">About Us</a></li>
                 <li><a href="/services.html" class="active">Services</a></li>
                 <li><a href="/why-us.html">Why Us</a></li>
                 <li><a href="/contact.html">Contact</a></li>
@@ -32,136 +34,124 @@
         </div>
     </nav>
 
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-        <div class="gradient-orb orb-4"></div>
-        <div class="grid-overlay"></div>
-        <div id="particles-container"></div>
-    </div>
-
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Services Header -->
+    <section class="page-hero">
         <div class="container">
-            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-                <span class="section-tag">Our Capabilities</span>
-                <h2 style="font-size: 3rem;">Services Built For <span class="gradient-text">Tomorrow</span></h2>
+            <div class="page-hero-content">
+                <span class="section-badge">Our Services</span>
+                <h1>Comprehensive IT Solutions</h1>
+                <p class="page-subtitle">From day-to-day support to strategic planning, we've got every aspect of your IT covered.</p>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section>
+    <!-- Services Grid -->
+    <section class="services-section">
         <div class="container">
-            <div class="services-modern-grid">
-                <!-- Service 1 -->
-                <div class="service-card-modern glass">
-                    <div class="service-number">01</div>
-                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+            <div class="services-grid">
+                <!-- Managed IT Services -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1"/>
                         </svg>
                     </div>
-                    <h4>Managed IT & Cloud Operations</h4>
-                    <p>Comprehensive management of Cloud (AWS, Azure, GCP) and On-Premise environments.</p>
-                    <ul class="service-features">
-                        <li>High-availability monitoring</li>
-                        <li>Hybrid cloud solutions</li>
-                        <li>24/7 infrastructure support</li>
+                    <h3>Managed IT Services</h3>
+                    <p>Complete IT management including monitoring, maintenance, and support for all your technology infrastructure.</p>
+                    <ul class="service-list">
+                        <li>24/7 System Monitoring</li>
+                        <li>Patch Management</li>
+                        <li>Help Desk Support</li>
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="service-card-modern glass">
-                    <div class="service-number">02</div>
-                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h4>Software Development & Change Management</h4>
-                    <p>From ideation to deployment with stability and speed.</p>
-                    <ul class="service-features">
-                        <li>Full SDLC handling</li>
-                        <li>Strategic change management</li>
-                        <li>Minimal downtime transitions</li>
-                    </ul>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="service-card-modern glass">
-                    <div class="service-number">03</div>
-                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <!-- Cybersecurity -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                             <path d="M9 12l2 2 4-4"/>
                         </svg>
                     </div>
-                    <h4>DevSecOps & Automation</h4>
-                    <p>Security baked into every workflow.</p>
-                    <ul class="service-features">
-                        <li>CI/CD pipelines</li>
-                        <li>Real-time vulnerability scanning</li>
-                        <li>Automated compliance</li>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business with enterprise-grade security solutions tailored to your needs and compliance requirements.</p>
+                    <ul class="service-list">
+                        <li>Threat Detection & Response</li>
+                        <li>Security Awareness Training</li>
+                        <li>Compliance Management</li>
                     </ul>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="service-card-modern glass">
-                    <div class="service-number">04</div>
-                    <div class="service-showcase-icon" style="margin: 0 0 var(--space-lg) 0;">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/>
-                            <path d="M12 2v10l4 4"/>
-                            <circle cx="12" cy="12" r="3"/>
+                <!-- Cloud Services -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
                         </svg>
                     </div>
-                    <h4>AI-Driven Efficiency</h4>
-                    <p>Leverage AI to eliminate manual bottlenecks.</p>
-                    <ul class="service-features">
-                        <li>Predictive analytics</li>
-                        <li>Self-healing systems</li>
-                        <li>Automated remediation</li>
+                    <h3>Cloud Services</h3>
+                    <p>Seamless cloud migration and management to enhance scalability, flexibility, and cost efficiency.</p>
+                    <ul class="service-list">
+                        <li>Cloud Migration</li>
+                        <li>Microsoft 365 Management</li>
+                        <li>AWS & Azure Solutions</li>
                     </ul>
                 </div>
-            </div>
 
-            <!-- Quote Box -->
-            <div class="quote-box glass-dark" style="margin-top: 60px;">
-                <p>
-                    "By integrating <strong>Artificial Intelligence</strong> into every layer of our 
-                    operations, we move beyond reactive support to <span class="gradient-text">predictive excellence</span>."
-                </p>
-                <p class="author">— Managing Director</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-card">
-                <div class="cta-content">
-                    <span class="cta-badge">Ready to Start?</span>
-                    <h2>Let's Build Your Future-Ready Infrastructure</h2>
-                    <p>Partner with us to transform your IT operations with intelligent automation and expert oversight.</p>
-                    <div class="cta-buttons">
-                        <a href="/contact.html" class="btn btn-primary btn-large">
-                            Contact Us Today
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
+                <!-- Backup & Recovery -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M8 12h8M12 8v8"/>
+                        </svg>
                     </div>
+                    <h3>Backup & Recovery</h3>
+                    <p>Comprehensive data protection ensuring business continuity with reliable backup and disaster recovery solutions.</p>
+                    <ul class="service-list">
+                        <li>Automated Backups</li>
+                        <li>Disaster Recovery Planning</li>
+                        <li>Business Continuity</li>
+                    </ul>
                 </div>
-                <div class="cta-decoration">
-                    <div class="decoration-ring ring-1"></div>
-                    <div class="decoration-ring ring-2"></div>
-                    <div class="decoration-ring ring-3"></div>
+
+                <!-- Network Solutions -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
+                        </svg>
+                    </div>
+                    <h3>Network Solutions</h3>
+                    <p>Design, implementation, and management of secure, high-performance network infrastructure.</p>
+                    <ul class="service-list">
+                        <li>Network Design & Setup</li>
+                        <li>WiFi Solutions</li>
+                        <li>VPN & Remote Access</li>
+                    </ul>
+                </div>
+
+                <!-- IT Consulting -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v2M12 20v2M2 12h2M20 12h2"/>
+                            <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"/>
+                        </svg>
+                    </div>
+                    <h3>IT Consulting</h3>
+                    <p>Strategic technology planning and consulting to align your IT with business objectives and drive growth.</p>
+                    <ul class="service-list">
+                        <li>Technology Roadmapping</li>
+                        <li>Vendor Management</li>
+                        <li>Budget Planning</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -173,12 +163,19 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                        <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </div>
+                        <span>Distinct Dawn Solutions</span>
                     </div>
-                    <p class="footer-tagline">Your trusted partner for comprehensive managed IT services and digital transformation.</p>
+                    <p>Your trusted partner for comprehensive managed IT services and digital transformation.</p>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="/services.html">Managed IT</a></li>
@@ -187,7 +184,7 @@
                         <li><a href="/services.html">Network Solutions</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="/about.html">About Us</a></li>
@@ -195,20 +192,17 @@
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Connect</h4>
                     <ul>
                         <li><a href="mailto:info@distinctdawn.co.za">info@distinctdawn.co.za</a></li>
-                        <li><a href="/contact.html">Fourways, Johannesburg</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Distinct Dawn Solutions. All rights reserved.</p>
+                <p>&copy; 2024 Distinct Dawn Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

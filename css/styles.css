@@ -242,7 +242,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: text-flicker 4s ease-in-out infinite;
 }
 
 /* Futuristic Glow Border */
@@ -311,8 +310,7 @@ body {
 .btn-primary {
     background: var(--gradient-primary);
     color: var(--black);
-    box-shadow: 0 0 30px rgba(253, 185, 19, 0.4), 0 4px 20px rgba(253, 185, 19, 0.3);
-    animation: glow-pulse 3s ease-in-out infinite;
+    box-shadow: 0 4px 20px rgba(253, 185, 19, 0.3);
 }
 
 .btn-primary::before {
@@ -322,7 +320,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transition: left 0.5s ease;
 }
 
@@ -332,7 +330,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 40px rgba(253, 185, 19, 0.6), 0 8px 30px rgba(253, 185, 19, 0.4);
+    box-shadow: 0 8px 30px rgba(253, 185, 19, 0.4);
 }
 
 .btn-outline {
@@ -543,7 +541,7 @@ body {
     position: absolute;
     border-radius: 50%;
     filter: blur(100px);
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .orb-1 {
@@ -686,7 +684,7 @@ body::after {
     background: linear-gradient(90deg, transparent, var(--primary), transparent);
     animation: scan-line 6s linear infinite;
     z-index: 2;
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .hero-layout {
@@ -920,7 +918,6 @@ body::after {
     background: var(--gradient-primary);
     border-radius: var(--radius-lg);
     color: var(--black);
-    box-shadow: 0 0 20px rgba(253, 185, 19, 0.4);
 }
 
 .support-content {
@@ -959,7 +956,7 @@ body::after {
    ============================================ */
 .stats-section {
     padding: var(--space-4xl) 0;
-    background: var(--gray-100);
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
 }
 
 .stats-grid {
@@ -977,7 +974,7 @@ body::after {
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 700;
-    color: var(--black);
+    color: var(--white);
     display: block;
     line-height: 1;
     margin-bottom: var(--space-sm);
@@ -990,7 +987,7 @@ body::after {
 
 .stat-card .stat-label {
     font-size: 0.9rem;
-    color: var(--gray-600);
+    color: var(--gray-400);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1366,7 +1363,7 @@ body::after {
    FOOTER
    ============================================ */
 .footer {
-    background: var(--black);
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
     color: var(--white);
     padding: var(--space-4xl) 0 var(--space-xl);
 }

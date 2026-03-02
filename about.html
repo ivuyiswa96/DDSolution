@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Distinct Dawn Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="/" class="logo">
-                <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Distinct Dawn Solutions</span>
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
+            <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about.html" class="active">About</a></li>
+                <li><a href="/about.html" class="active">About Us</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/why-us.html">Why Us</a></li>
                 <li><a href="/contact.html">Contact</a></li>
@@ -32,76 +34,105 @@
         </div>
     </nav>
 
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-        <div class="gradient-orb orb-4"></div>
-        <div class="grid-overlay"></div>
-        <div id="particles-container"></div>
-    </div>
-
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- About Header -->
+    <section class="page-hero">
         <div class="container">
-            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-                <span class="section-tag">Who We Are</span>
-                <h2 style="font-size: 3rem;">We're Not Just Another <span class="gradient-text">IT Vendor</span></h2>
+            <div class="page-hero-content">
+                <span class="section-badge">About Us</span>
+                <h1>Your Trusted Technology Partner</h1>
+                <p class="page-subtitle">We're more than just an IT company—we're your strategic partner in digital transformation.</p>
             </div>
         </div>
     </section>
 
     <!-- About Content -->
-    <section class="overview">
+    <section class="about-section">
         <div class="container">
-            <p>
-                Distinct Dawn Solutions (DDS) is a future-ready Managed Services Provider 
-                delivering high-availability operations, intelligent automation, and governance-led 
-                service delivery. We combine deep technical expertise with consulting-grade 
-                discipline to ensure technology environments remain secure, resilient, and aligned 
-                to business priorities.
-            </p>
-            <p>
-                We don't just keep the lights on. <strong>We illuminate the path toward your next stage 
-                of growth through intelligent automation and expert oversight.</strong>
-            </p>
-
-            <!-- Operating Principle Card -->
-            <div class="card card-yellow" style="max-width: 700px; margin: 40px 0;">
-                <div style="display: flex; align-items: flex-start; gap: 20px;">
-                    <div style="background: white; padding: 20px; border-radius: 50%; flex-shrink: 0;">
-                        <span style="font-size: 32px;">💡</span>
+            <div class="about-grid">
+                <!-- Left: Services Card -->
+                <div class="services-dark-card">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <span>Enterprise Security</span>
                     </div>
-                    <div>
-                        <h4 style="font-style: italic; margin-bottom: 10px;">Our Operating Principle</h4>
-                        <p>
-                            We don't just keep the lights on. <strong>We illuminate</strong> the path toward your next 
-                            stage of growth through <strong>intelligent automation</strong> and <strong>expert oversight.</strong>
-                        </p>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                            </svg>
+                        </div>
+                        <span>Cloud Solutions</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="10" width="4" height="10" rx="1"/>
+                                <rect x="10" y="5" width="4" height="15" rx="1"/>
+                                <rect x="15" y="8" width="4" height="12" rx="1"/>
+                            </svg>
+                        </div>
+                        <span>Data Analytics</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="9"/>
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+                            </svg>
+                        </div>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="about-content">
+                    <h2>Empowering Businesses Since 2014</h2>
+                    <p>Founded with a vision to democratize enterprise-grade IT solutions, we've grown from a small team of passionate technologists to a full-service MSP serving hundreds of businesses across multiple industries.</p>
+                    <p>Our approach combines cutting-edge technology with personalized service. We don't believe in one-size-fits-all solutions—every client receives a tailored strategy designed to meet their unique challenges and goals.</p>
+                    
+                    <div class="checklist">
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="check-text">
+                                <strong>Certified Professionals</strong>
+                                <span>Microsoft, Cisco, AWS certified experts</span>
+                            </div>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="check-text">
+                                <strong>Proactive Approach</strong>
+                                <span>We prevent problems before they occur</span>
+                            </div>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="check-text">
+                                <strong>Transparent Pricing</strong>
+                                <span>No hidden fees, predictable costs</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Our Positioning -->
-    <section>
-        <div class="container">
-            <h3>OUR POSITIONING</h3>
-            <p>
-                DDS operates as a <strong>strategic operations partner</strong>, not a commodity IT vendor. We 
-                assume accountability for the stability, security, and evolution of our clients' 
-                technology landscapes while aligning every service to measurable business 
-                outcomes such as uptime, cost efficiency, scalability, compliance, and 
-                time-to-market.
-            </p>
-            <p>
-                Our operating model draws strength from proven consulting methodologies — agile 
-                delivery, DevSecOps, and structured change management — embedded directly 
-                into managed services. This allows DDS to support both <strong>run-the-business</strong> and 
-                <strong>change-the-business</strong> mandates without friction.
-            </p>
         </div>
     </section>
 
@@ -111,12 +142,19 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                        <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </div>
+                        <span>Distinct Dawn Solutions</span>
                     </div>
-                    <p class="footer-tagline">Your trusted partner for comprehensive managed IT services and digital transformation.</p>
+                    <p>Your trusted partner for comprehensive managed IT services and digital transformation.</p>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="/services.html">Managed IT</a></li>
@@ -125,7 +163,7 @@
                         <li><a href="/services.html">Network Solutions</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="/about.html">About Us</a></li>
@@ -133,20 +171,17 @@
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Connect</h4>
                     <ul>
                         <li><a href="mailto:info@distinctdawn.co.za">info@distinctdawn.co.za</a></li>
-                        <li><a href="/contact.html">Fourways, Johannesburg</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Distinct Dawn Solutions. All rights reserved.</p>
+                <p>&copy; 2024 Distinct Dawn Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

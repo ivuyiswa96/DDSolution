@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Us - Distinct Dawn Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="/" class="logo">
-                <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Distinct Dawn Solutions</span>
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
+            <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About</a></li>
+                <li><a href="/about.html">About Us</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/why-us.html" class="active">Why Us</a></li>
                 <li><a href="/contact.html">Contact</a></li>
@@ -32,146 +34,137 @@
         </div>
     </nav>
 
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-        <div class="gradient-orb orb-4"></div>
-        <div class="grid-overlay"></div>
-        <div id="particles-container"></div>
-    </div>
-
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Why Us Hero -->
+    <section class="why-hero">
         <div class="container">
-            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-                <span class="section-tag">Vision & Mission</span>
-                <h2 style="font-size: 3rem;">The <span class="gradient-text">DDS</span> Difference</h2>
+            <div class="why-hero-content">
+                <h1>The Distinct Dawn Difference</h1>
+                <p>We don't just manage IT—we transform it into a competitive advantage for your business.</p>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <section>
+    <!-- Why Us Content -->
+    <section class="why-section">
         <div class="container">
-            <div style="margin-bottom: 30px;">
-                <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><strong>Mission:</strong></h4>
-                <p style="font-size: 1.1rem; color: #666;">
-                    To enable organisations to operate with confidence by delivering resilient, 
-                    secure, and intelligently automated managed services that translate technology 
-                    investment into measurable business value.
-                </p>
-            </div>
-            
-            <div style="margin-bottom: 40px;">
-                <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><strong>Vision:</strong></h4>
-                <p style="font-size: 1.1rem; color: #666;">
-                    To be the trusted managed services partner for organisations navigating 
-                    complexity, growth, and transformation — recognised for operational excellence, 
-                    governance integrity, and future-ready innovation.
-                </p>
-            </div>
-
-            <!-- Values -->
-            <h3>OUR PHILOSOPHY</h3>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="icon">⚖️</div>
-                    <h4>Integrity</h4>
-                    <p>We operate with transparency, accountability, and governance at the core of everything we do, ensuring trust at both operational and executive levels.</p>
+            <div class="why-grid">
+                <!-- Left: Numbered Benefits -->
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <div class="benefit-content">
+                            <h3>Proactive, Not Reactive</h3>
+                            <p>We identify and resolve issues before they impact your business. Our monitoring systems work 24/7 to keep you running smoothly.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <div class="benefit-content">
+                            <h3>Fixed Monthly Pricing</h3>
+                            <p>Predictable IT costs with no surprise bills. Our all-inclusive packages cover everything you need at one flat rate.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <div class="benefit-content">
+                            <h3>Dedicated Account Manager</h3>
+                            <p>You'll have a single point of contact who knows your business inside and out—no more explaining your setup repeatedly.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">04</div>
+                        <div class="benefit-content">
+                            <h3>Local & Responsive</h3>
+                            <p>When you need us on-site, we're there fast. Our local team ensures rapid response for any situation that requires hands-on support.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <div class="icon">💡</div>
-                    <h4>Innovation</h4>
-                    <p>We continuously evolve our services through automation, AIOps, and modern delivery practices to anticipate challenges before they impact the business.</p>
-                </div>
-                <div class="value-card">
-                    <div class="icon">🤝</div>
-                    <h4>Collaboration</h4>
-                    <p>We work as an extension of our clients' teams, aligning stakeholders, technology, and processes to deliver sustainable outcomes.</p>
-                </div>
-            </div>
 
-            <p style="font-size: 1.1rem; color: #666; margin-bottom: 20px;">
-                DDS believes the future of managed services lies in <strong>intelligent operations, 
-                embedded consulting discipline, and outcome-driven accountability.</strong> We do 
-                not simply keep the lights on — we ensure the entire digital foundation is strong 
-                enough to support growth, innovation, and transformation.
-            </p>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section style="background: #f5f5f5; padding: 60px 0;">
-        <div class="container">
-            <h2>SET APART</h2>
-            <h3>WHY US?</h3>
-            <p style="font-size: 1.1rem; color: #666; margin-bottom: 40px;">
-                While traditional Managed Services Providers focus on maintaining up-time and 
-                resolving incidents, DDS redefines managed services as a strategic capability. Our 
-                model is designed not only to sustain operations but to support growth, 
-                compliance, and transformation actively. <strong>We go beyond operational stability, 
-                guiding organisations toward their next stage of development through 
-                intelligent automation and expert oversight.</strong>
-            </p>
-
-            <!-- Comparison -->
-            <div class="comparison">
-                <div class="comparison-column">
-                    <h4>🏢 Traditional MSP</h4>
-                    <ul>
-                        <li><span class="number">01</span> IT availability and break-fix support</li>
-                        <li><span class="number">02</span> Reactive and SLA-driven</li>
-                        <li><span class="number">03</span> Limited scripting</li>
-                        <li><span class="number">04</span> Perimeter-based, tool-centric</li>
-                        <li><span class="number">05</span> Basic ITIL processes</li>
-                        <li><span class="number">06</span> Ad hoc or project-based</li>
-                    </ul>
-                </div>
-                <div class="vs-divider">VS</div>
-                <div class="comparison-column" style="background: #FDB913;">
-                    <h4>☁️ DDS</h4>
-                    <ul>
-                        <li><span class="number">01</span> Business outcomes enabled by resilient operations</li>
-                        <li><span class="number">02</span> Predictive, outcome-driven, and continuously optimised</li>
-                        <li><span class="number">03</span> AI-driven AIOps and self-healing platforms</li>
-                        <li><span class="number">04</span> Embedded DevSecOps and continuous risk management</li>
-                        <li><span class="number">05</span> ISO-aligned governance and auditable controls</li>
-                        <li><span class="number">06</span> Structured, low-risk change embedded in operations</li>
-                    </ul>
+                <!-- Right: Metrics Card -->
+                <div class="metrics-card">
+                    <h3>Client Success Metrics</h3>
+                    <div class="metrics-list">
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span class="metric-name">Client Retention Rate</span>
+                                <span class="metric-percent">97%</span>
+                            </div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 97%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span class="metric-name">First-Call Resolution</span>
+                                <span class="metric-percent">85%</span>
+                            </div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span class="metric-name">Client Satisfaction</span>
+                                <span class="metric-percent">4.9/5</span>
+                            </div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span class="metric-name">Avg. Cost Reduction</span>
+                                <span class="metric-percent">32%</span>
+                            </div>
+                            <div class="metric-bar">
+                                <div class="metric-fill green" style="width: 32%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Governance Section -->
-    <section>
+    <!-- Testimonials -->
+    <section class="testimonials-section">
         <div class="container">
-            <h3>GOVERNANCE-LED MSP</h3>
-            <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px;">
-                DDS operates within a governance-first framework designed to support enterprise 
-                and public-sector compliance requirements. Our managed services are structured 
-                to align with internationally recognised standards, enabling clients to demonstrate 
-                control, accountability, and continual improvement.
-            </p>
-
-            <div class="iso-grid">
-                <div class="iso-card">
-                    <h5>ISO 9001</h5>
-                    <p>Quality Management - Standardised, repeatable service delivery processes</p>
-                </div>
-                <div class="iso-card">
-                    <h5>ISO/IEC 27001</h5>
-                    <p>Information Security - Risk-based security controls & monitoring</p>
-                </div>
-                <div class="iso-card">
-                    <h5>ISO/IEC 20000</h5>
-                    <p>IT Service Management - Structured incident, problem & change management</p>
-                </div>
-                <div class="iso-card">
-                    <h5>ISO 22301</h5>
-                    <p>Business Continuity - Resilience, disaster recovery and continuity plans</p>
+            <div class="testimonials-wrapper">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"They transformed our entire IT infrastructure. Downtime is virtually non-existent now, and our team is more productive than ever."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <strong>James Davidson</strong>
+                                <span>CEO, TechStart Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The level of service is exceptional. They're not just IT support—they're true partners who understand our business goals."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <strong>Sarah Mitchell</strong>
+                                <span>COO, HealthFirst</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Switching to Distinct Dawn was the best decision we made. Our IT costs dropped 30% while service quality improved dramatically."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RK</div>
+                            <div class="author-info">
+                                <strong>Robert Kim</strong>
+                                <span>CFO, BuildRight Construction</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,12 +176,19 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-d">D</span><span class="logo-d2">D</span><span class="logo-s">S</span>
-                        <span class="logo-text">DISTINCT DAWN<br><small>SOLUTIONS</small></span>
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </div>
+                        <span>Distinct Dawn Solutions</span>
                     </div>
-                    <p class="footer-tagline">Your trusted partner for comprehensive managed IT services and digital transformation.</p>
+                    <p>Your trusted partner for comprehensive managed IT services and digital transformation.</p>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="/services.html">Managed IT</a></li>
@@ -197,7 +197,7 @@
                         <li><a href="/services.html">Network Solutions</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="/about.html">About Us</a></li>
@@ -205,20 +205,17 @@
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-column">
                     <h4>Connect</h4>
                     <ul>
                         <li><a href="mailto:info@distinctdawn.co.za">info@distinctdawn.co.za</a></li>
-                        <li><a href="/contact.html">Fourways, Johannesburg</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Distinct Dawn Solutions. All rights reserved.</p>
+                <p>&copy; 2024 Distinct Dawn Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
